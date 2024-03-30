@@ -31,6 +31,13 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+@media (max-width: 768px) {
+  .custom-img-size {
+    width: 100%; /* Ajusta el ancho a la pantalla del dispositivo */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
