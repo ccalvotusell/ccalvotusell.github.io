@@ -44,7 +44,7 @@ h6 {
 --------------------------------------------------------------*/
 
   ol.reverse {
-    counter-reset: section 8; /* Start counting from one number higher than you want to start */
+    counter-reset: section 9; /* Start counting from one number higher than you want to start */
     list-style-type: none; /* Removes default numbering */
   }
   ol.reverse li {
