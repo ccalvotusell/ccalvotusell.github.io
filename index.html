@@ -270,7 +270,7 @@ The objective of the current research is to use all-atom molecular dynamics simu
         <h3 class="mb-0">Full list of publications</h3>
          <p>
          </p>
-         <ol reversed>
+  <ol id="publication-list">
            <li>
       Hedges, J.: Marchand, J.; <strong> Calvó-Tusell, C.</strong>; Wei, Z-W.; Millar, D.; Garcia-Borràs, M.; Chang, M.; Ryan, K.; 
       "<em>Terminal alkyne formation by a pyridoxal phosphate-dependent enzyme</em>", accepted for publication, Nat. Chem. Biol., 2025
@@ -451,7 +451,23 @@ Hydrolase and Acetylcholinesterase for the Treatment of Alzheimer’s Disease"</
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const ol = document.getElementById("publication-list");
+    const items = Array.from(ol.querySelectorAll("li"));
 
+    // Sort in reverse order based on text content (you can customize this)
+    items.sort((a, b) => b.textContent.localeCompare(a.textContent));
+
+    // Clear the original list
+    ol.innerHTML = "";
+
+    // Append sorted items back into the list
+    items.forEach(item => ol.appendChild(item));
+  });
+  </script>
+
+            
 </body>
 
 </html>
