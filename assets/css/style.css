@@ -44,7 +44,7 @@ h6 {
 --------------------------------------------------------------*/
 
 ol.reverse {
-  counter-reset: section 14; 
+  counter-reset: section 13; 
   list-style-type: none; 
 }
 ol.reverse li {
