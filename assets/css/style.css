@@ -42,18 +42,23 @@ h6 {
 /*--------------------------------------------------------------
 # Reverse numbering publications
 --------------------------------------------------------------*/
-/**
-  * ol.reverse {
-  *   counter-reset: section 14; /* Start counting from one number higher than you want to start */
-  *   list-style-type: none; /* Removes default numbering */
-  * }
-  * ol.reverse li {
-  *   counter-increment: section -1; /* Decrement the counter */
-  * }
-  * ol.reverse li::before {
-  *   content: counter(section) ". "; /* Display the counter before the item content */
-  * }
+/*
+ol.reverse {
+  counter-reset: section 14; 
+  /* Start counting from one number higher than you want to start */
+  list-style-type: none; 
+  /* Removes default numbering */
+}
+ol.reverse li {
+  counter-increment: section -1; 
+  /* Decrement the counter */
+}
+ol.reverse li::before {
+  content: counter(section) ". "; 
+  /* Display the counter before the item content */
+}
 */
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
